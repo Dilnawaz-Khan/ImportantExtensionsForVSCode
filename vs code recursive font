@@ -1,0 +1,57 @@
+step 1)
+    first install fonts from following link:
+    https://github.com/kencrocken/FiraCodeiScript
+
+
+step 2)
+    after extraction
+    install three of fonts from donwloaded file
+    
+    
+step 3)
+    open settings.json from settings in VS Code and paste following lines code in respective section
+    
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.tokenColorCustomizations": {
+    
+    "textMateRules": [
+        {
+            "scope": [
+                "comment",
+                
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope" :[
+                "keyword"
+            ],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },{
+            "scope":[
+                "variable",
+                "constant",
+                "string.quoted",
+                "string.quoted.single"
+                ], 
+                "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": [
+                "Keyword",
+                "Storage"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+    ]
+    },
